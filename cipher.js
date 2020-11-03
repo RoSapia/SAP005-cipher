@@ -4,10 +4,14 @@ const cipher = {
 
 export default cipher;
 
-function encode(offset){
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  let alphabet_array = alphabet.split("") 
-
-  console.log(alphabet_array);
+function encode(offset, strCipher) {
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  offset = document.getElementById(offset);
+  strCipher = document.getElementById(strCipher).toUpperCase();
+  let newStrCipher = '';
+  for (let i = 0; i < strCipher.length; i++) {
+    
+  }
 
 }
+encode();
