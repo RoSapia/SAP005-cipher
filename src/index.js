@@ -1,7 +1,7 @@
-import cipher from './cipher.js';//pq
+import cipher from './cipher.js';
 
 
-function offset() {
+//function offset() {
   let offset = document.getElementById("offset");
   let c_select = document.createElement("select");
   offset.appendChild(c_select);
@@ -10,21 +10,27 @@ function offset() {
     c_select.appendChild(newoption);
     newoption.innerHTML = i;
   }
-}
-offset();
-/*function message_choice() {
-  let button_submit = document.getElementById(submit)
-  let button_encode = document.getElementById(encode);
-  let button_decode = document.getElementById(decode);
-  button_submit.addEventListener("click", function () {
-    if (button_encode.addEventListener("click", encode, true)) {//se tiver clicado chama a função encode
+//}
+//offset();
+//function messageChoice(evt) {
+  //evt.preventDefault();
+  let buttonSubmit = document.getElementById("submit");
+  let buttonEncode = document.getElementById("encode");
+  let buttonDecode = document.getElementById("decode");
+  buttonSubmit.addEventListener("click", function(evt){
+    evt.preventDefault();
+    console.log(buttonEncode);
+    console.log(buttonDecode);
+    /*if (buttonEncode.addEventListener("click", encode, true)){
       console.log("Botão encode clicado ");
     }
-    else if (button_decode.addEventListener("click"))
-  }
-}*/
+    else if (buttonDecode.addEventListener("click", decode)){
+      console.log("Botão decode clicado ");
+    }*/
+  });
+//}
 
 //offset();
-//radio_choice();
+///messageChoice();
 console.log(cipher);//pq
 
