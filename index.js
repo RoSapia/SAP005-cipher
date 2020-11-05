@@ -1,31 +1,31 @@
 import cipher from './cipher.js';
 
-let offset = Number(document.getElementById("offset"));
-let strCipher = document.getElementById("str_cipher").value.toUpperCase();
-document.getElementById("str_cipher").value = cipher.newStr;
-let createOffset = document.getElementById("offset");
-let c_select = document.createElement("select");
-createOffset.appendChild(c_select);
+let offsetDiv = document.getElementById("offsetDiv");
+let offset = document.createElement("select");
+offsetDiv.appendChild(offset);
 for (let i = 1; i <= 26; i++) {
   let newoption = document.createElement("option");
-  c_select.appendChild(newoption);
+  offset.appendChild(newoption);
   newoption.innerHTML = i;
+  newoption.value = i;
 }
 
 let buttonSubmit = document.getElementById("submit");
 let choice = document.getElementsByName("choice");
 buttonSubmit.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log(choice);
+  let strCipher = document.getElementById("str_cipher").value;
+  
   if (choice[0].checked) {
-    console.log("Botão encode clicado ");
-  }
+    document.getElementById("str_cipher").value = cipher.encode(Number(offset.value), strCipher.toString().toUpperCase());
+    }
   else if (choice[1].checked) {
-    console.log("Botão decode clicado ");
+    document.getElementById("str_cipher").value = cipher.decode(Number(offset.value), strCipher.toString().toUpperCase());
   }
 });
 
 
 
-console.log(cipher.encode(offset, strCipher));
+
+
 
