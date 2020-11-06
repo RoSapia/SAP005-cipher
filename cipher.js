@@ -13,7 +13,7 @@ const cipher = {
     }
     return newStr;
   },
-  
+
   decode(offset, strCipher) {
     let newStr = '';
     for (let i = 0; i < strCipher.length; i++) {

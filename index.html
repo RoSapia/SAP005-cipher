@@ -4,49 +4,48 @@
 <head>
   <meta charset="utf-8">
   <title>Meu querido diario</title>
-  <link rel="stylesheet" href="style.css" />
+  <link ref="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div id="root">
-    <!--<h1>Hello world!</h1>-->
-  </div>
   <header>
-    <div class="title">
-      <h1>Meu querido diário</h1>
-      <hr>
-      <h2>"Nesta aplicação você escreve seu diário e codifica seus textos para que ninguém saiba o que escreveu.</h2>
-    </div>
+    <h1>Meu querido diário</h1>
+    <h2>Aqui você escreve o seu diário e codifica seus segredos para que ninguém saiba o que escreveu.</h2> 
   </header>
-  <main>
+  <div id="div_principal">
+    <div class="efeito">
     <div class="container">
-      <form>
-        <div id="offsetDiv"> Escolha um número abaixo que irá corresponder a um tipo de cifragem:
-        </div>
-        <br>
-        <div class="radio_button">
-          <p>Escolha se deseja cifrar ou decifrar uma mensagem:</p>
-          <div>
-            <input type="radio" id="encode" name="choice" value=>
-            <label for="encode">Cifrar</label>
-          </div>
-          <div>
-            <input type="radio" id="decode" name="choice" value="decode">
-            <label for="decode">Decifrar</label>
-          </div>
-          <br>
-          <div>
-            <label for="str_cipher">Digite a frase:</label>
-            <p><textarea id="str_cipher" name="str" rows="5" cols="33"></textarea></p>
-            <div>
-              <button id="submit" name="submit">Ver resultado</button><!--por event prevent default-->
-            </div>
-          </div>
-        </div>
-      </form>
+    <form>
+      <div id="offsetDiv">
+        Escolha um número que corresponderá a chave do seu diário:
+      </div>
+      <br>
+      <div class="radio_button">
+        <p>Escolha se deseja revelar ou esconder os escritos de seu texto:</p>
+
+        <p><input type="radio" id="encode" name="choice" value=>
+          <label for="encode">Esconder</label></p>
+
+
+        <p><input type="radio" id="decode" name="choice" value="decode">
+          <label for="decode">Revelar</label></p>
+      </div>
+      <br>
+
+      <p><label for="str_cipher">Escreva seu texto:</label></p>
+      <p><textarea id="str_cipher" name="str" rows="5" cols="33"></textarea></p>
+
+      <button id="submit" name="submit">Ver resultado</button>
+      <!--por event prevent default-->
+
+
+    </form>
+      </div>
     </div>
-    <script src="index.js" type="module"></script>
-  </main>
+  </div>
+  <script src="index.js" type="module"></script>
+  </div>
+  <footer><a href="https://github.com/RoSapia" target="blank">Roberta Vieira Sapia</a></footer>
 </body>
 
 </html>
