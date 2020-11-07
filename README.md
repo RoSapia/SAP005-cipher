@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
+* [1. Introdução](#1-introdução)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-considerações-gerais)
@@ -18,37 +18,61 @@
 
 ## 1. Introdução
 
-É uma aplicação web que auxilia pessoas a escrever o seu diário secreto.
+É uma aplicação web com o nome: "Meu querido diário" que auxilia pessoas a 
+escrever o seu diário secreto.
+
 O usuário escolhe um número que será o código secreto para acessar o seu diário
-e poderá deixar seu texto codificado. Caso queira reler o que havia escrito poderá
-decifrar o texto secreto, utilizando o número do seu código.
+e poderá deixar seu texto codificado. Caso queira reler o que havia escrito 
+poderá decifrar o texto secreto, utilizando o número do seu código.
 
 
-## 2. Instalação
+## 2. Projeto 
 
-O que eu tenho que fazer exatamente? Neste projeto você criará a primeira
-aplicação web do _bootcamp_. Nela o usuário poderá cifrar e decrifrar um texto
-indicando a chave de deslocamento (_offset_).
+O usuário foi definido à partir da necessidade em esconder os textos escritos 
+em diário, ao qual, contém informações que os usuários tem por objetivo manter
+em segredo, mesmo que por ventura, esses escritos acabem caindo em mãos 
+erradas. Caso o usuário desejar reler e entender o que havia escrito, poderá 
+inserir o texto já cifrado, escolher a opção para revelar o que havia escrito.
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
+O público alvo é composto por pessoas de sexo ou idade diversos, que deseja
+codificar seus textos escritos e posteriormente decodificá-los.
 
-* Mensagens secretas para alguma pessoa.
-* Ferramenta de mensagens internas de uma organização em uma zona de conflito.
-* Cifrar cartões de crédito.
-* Criar senhas seguras para email.
+  ## 2.1.Processo para definir o produto final
+  Primeiramente montei um escopo basico em html, colocando as frases, funcionalidades
+  e botões,sem uso de estilo, somente para ter os ids e valores que precisava para 
+  realizar a parte da lógica no JavaScript
 
-## 3. Objetivos de aprendizagem
+## 2.2. Funcionalidades da aplicação
 
-Neste projeto você aprenderá a construir uma aplicação web (_WebApp_) que irá
-interagir com o usuário final através do navegador utilizando HTML, CSS e
+ ## Passo a passo para o usuário
+  
+  1º Ao entrar na aplicação o usuário deve escolher um número, que corresponderá
+    ao código do seu diário (offset).
+    
+  2º Há dois botões do tipo "radio", em que o usuário deve escolher se deseja 
+    "Esconder"(cifrar) ou "Revelar"(decifrar).
+    É importante que um dos dois botões estejam selecionados para a próxima etapa.
+    
+  3º O usuário deve escrever o texto na caixa de texto com a indicação: "Escreva
+    seu texto:"
+    
+  4º Para visualizar o resultado desejado, o usuário deve apertar o botão: "Ver 
+    resultado".
+    Caso o botão "Esconder" estiver selecionado, o botão "Ver resultado" mostrará
+    na "caixa de texto" um texto codificado.
+    Caso o botão "Revelar" estiver selecionado, o botão "Ver resultado" mostrará 
+    na "caixa de texto" um texto decodificao.
+    
+     
+## 3. Ferramentas utilizadas nesse projeto
+
+Neste projeto foi construido a aplicação web (_WebApp_) "Meu querido diário"
+que irá interagir com o usuário final através do navegador utilizando HTML, CSS e
 JavaScript como ferramentas.
 
 ### HTML e CSS
 
-* [ ] [Uso de HTML semântico.](https://developer.mozilla.org/pt-BR/docs/Glossario/Semantica#Sem%C3%A2ntica_em_HTML)
+* [ ] Uso de HTML semântico.
 * [ ] Uso de seletores de CSS.
 * [ ] Construir uma aplicação respeitando o desenho realizado (protótipo).
 
@@ -56,8 +80,7 @@ JavaScript como ferramentas.
 
 * [ ] Uso de seletores do DOM.
 * [ ] Manipular eventos do DOM.
-* [ ] [Manipulação dinâmica do DOM.](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+* [ ] Manipulação dinâmica do DOM.
 
 ### JavaScript
 
@@ -69,7 +92,7 @@ JavaScript como ferramentas.
 
 ### Testing
 
-* [ ] [Teste unitário.](https://jestjs.io/docs/pt-BR/getting-started)
+* [ ] Teste unitário.
 
 ### Estrutura do código e guia de estilo
 
@@ -84,10 +107,6 @@ JavaScript como ferramentas.
 
 ## 4. Considerações gerais
 
-* Este projeto deve ser resolvido individualmente.
-* O projeto será entregue subindo o seu código no GitHub (commit/push) e o
-  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
-  preocupe, você aprenderá durante o projeto.
 
 ## 5. Critérios de aceitação mínimos do projeto
 
