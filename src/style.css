@@ -80,7 +80,7 @@ select{
 
 /* class */
 .container{
-	max-width: 1128px;
+	max-width: 960px;
     margin: 0 auto;
     color:white;
 	font-size: 35px;
