@@ -23,7 +23,7 @@ inserir o texto já cifrado, escolher a opção para revelar o que havia escrito
 O público alvo é composto por pessoas de sexo ou idade diversos, que deseja
 codificar seus textos escritos e posteriormente decodificá-los.
 
-  ## 2.1.Processo para definir o produto final
+  ## 2.1. Processo para definir o produto final
   
   Primeiramente foi montado um escopo basico em html:
   > Colocado as frases, funcionalidades e botões, sem o uso de estilo, somente
@@ -33,6 +33,8 @@ codificar seus textos escritos e posteriormente decodificá-los.
   > Foi feito a integração do html com o JavaScript utilizando o DOM;
   > Foi chamada as funções cipher.encode e cipher.decode.
   > Foi feito a estilização no style.css.
+  A página finalizada: 
+  
   
   
   
