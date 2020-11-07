@@ -3,7 +3,7 @@
 /* TAGS */
 p{
 	color:white;
-    font-size: 22px;
+    font-size: 35px;
 }	
 	
 
@@ -11,13 +11,15 @@ body{
 	background-color:#000000;
 	text-shadow:1px 1px 1px #111111;
 	font-family: 'Dancing Script', cursive;
+	font-size: 35px;
 }
 
 
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Dancing Script', cursive;;
+	font-family: 'Dancing Script', cursive;
+	
 }
 
 header{
@@ -36,7 +38,7 @@ footer{
 	height: 50px;
 	text-align: center;
 	padding: 10px;
-	font-size:12px;
+	font-size: 20px;
 	text-shadow:1px 1px 1px #111111;
 }
 
@@ -50,24 +52,38 @@ h1{
 
 h2{
 	text-shadow:1px 1px 1px whitesmoke;
+	font-size: 35px;
+	
 }
 
+select{
+	width: 45px;
+	height: 28px;
+	font-size: 20px;
+}
 /* IDS */
 #div_principal{
 	background-image: url('background.jpg');
 	clear:both;
 	background-size:100%;
 	min-height: 400px;
+	max-width: 100%;
 	padding:80px 0 0 0;
+}
+
+#submit{
+	width:130px;
+	height:40px;
+	font-size: 25px;
 }
 
 
 /* class */
 .container{
-	width: 960px;
+	max-width: 1128px;
     margin: 0 auto;
     color:white;
-	font-size: 22px;
+	font-size: 35px;
 	font-family: 'Dancing Script', cursive;
 	text-shadow:1px 1px 1px #111111;
 }
