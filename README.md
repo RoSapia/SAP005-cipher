@@ -35,7 +35,7 @@ codificar seus textos escritos e posteriormente decodificá-los.
   > Foi feito a estilização no style.css.
   A página finalizada: 
   
-  
+   ![Layout da aplicação web](https://github.com/RoSapia/SAP005-cipher/blob/master/design.png) 
   
   
 
