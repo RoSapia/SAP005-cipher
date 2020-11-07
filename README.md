@@ -25,17 +25,17 @@ codificar seus textos escritos e posteriormente decodificá-los.
 
   ## 2.1. Processo para definir o produto final
   
-  Primeiramente foi montado um escopo basico em html:
-  > Colocado as frases, funcionalidades e botões, sem o uso de estilo, somente
-  para ter os ids e valores que precisava para realizar a parte do index.js.
-  No index.js:
-  > Foi feito uma função que cria um botão select na página; 
-  > Foi feito a integração do html com o JavaScript utilizando o DOM;
-  > Foi chamada as funções cipher.encode e cipher.decode.
-  > Foi feito a estilização no style.css.
-  A página finalizada: 
+  * Primeiramente foi montado um escopo basico em html:
+       * Colocado as frases, funcionalidades e botões, sem o uso de estilo, somente
+        para ter os ids e valores que precisava para realizar a parte do index.js.
+  * No index.js:
+       * Foi feito uma função que cria um botão select na página.
+       * Foi feito a integração do html com o JavaScript utilizando o DOM.
+       * Foi chamada as funções cipher.encode e cipher.decode.
+       * Foi feito a estilização no style.css.
+   * A página finalizada: 
   
-   ![Layout da aplicação web](https://github.com/RoSapia/SAP005-cipher/blob/master/design.png) 
+     ![Layout da aplicação web](https://github.com/RoSapia/SAP005-cipher/blob/master/design.png) 
   
   
 
