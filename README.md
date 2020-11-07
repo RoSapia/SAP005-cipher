@@ -50,6 +50,8 @@ codificar seus textos escritos e posteriormente decodificá-los.
   
    ## 2.3. Passo a passo para o usuário
   
+  Entrar no link: https://rosapia.github.io/SAP005-cipher/
+  
   * 1º Ao entrar na aplicação o usuário deve escolher um número, que corresponderá
     ao código do seu diário (offset).
     
